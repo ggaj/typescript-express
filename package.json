@@ -29,13 +29,14 @@
     "@types/node": "^9.6.5"
   },
   "dependencies": {
-    "typescript": "^3.3.3333",
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "mysql": "^2.15.0",
-    "typeorm": "^0.2.0"
+    "typeorm": "^0.2.0",
+    "typescript": "^3.6.3"
   },
   "scripts": {
-    "start": "tsc && node src/index.js"
+    "build": "tsc",
+    "start": "npm run build && node build/index.js"
   }
 }
