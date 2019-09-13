@@ -24,7 +24,7 @@ import {AppRoutes} from "./routes";
     });
 
     // run app
-    app.listen(3000);
+    app.listen(process.env.PORT);
 
     console.log("Express application is up and running on port 3000");
 
