@@ -7,12 +7,6 @@ import {Post} from "../entity/Post";
  */
 export async function postGetAllAction(request: Request, response: Response) {
 
-    // get a post repository to perform operations with post
-    const postRepository = getManager().getRepository(Post);
+    return response.json("API Working")
 
-    // load a post by a given post id
-    const posts = await postRepository.find();
-
-    // return loaded posts
-    response.send(posts);
 }
