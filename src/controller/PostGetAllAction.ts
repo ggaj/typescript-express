@@ -7,6 +7,6 @@ import {Post} from "../entity/Post";
  */
 export async function postGetAllAction(request: Request, response: Response) {
 
-    return response.json("API Working")
+    response.json("API Working")
 
 }
